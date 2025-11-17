@@ -1,0 +1,176 @@
+/* ============================================================
+   PUBLIC SITE STYLES + RESPONSIVE LAYOUT
+   ============================================================ */
+/* Justify all text but do NOT justify buttons or controls */
+.content-section *:not(button):not(a):not(.app-button) {
+  text-align: justify !important;
+}
+
+button, 
+button *, 
+.app-button, 
+.app-button * {
+  text-align: center !important;
+}
+
+/* Prevent sideways scroll */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Optional wrapper for live site */
+.page-wrapper {
+  max-width: 900px;
+  margin: auto;
+  padding: 15px;
+}
+
+.content-section {
+  margin: 20px;
+}
+
+/* App Buttons */
+#appLinks button {
+  background: #555;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin: 10px;
+  width: 100%;
+  max-width: 260px;
+}
+
+#appLinks button:hover { background: #777; }
+
+/* Video Embeds */
+#videoGuides iframe {
+  display: inline-block;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  aspect-ratio: 16/9;
+  margin: 7px;
+  border-radius: 6px;
+}
+
+/* Responsive images */
+img, .content-section img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px; /* optional */
+}
+
+/* -----------------------------
+   MOBILE BREAKPOINTS
+   ----------------------------- */
+@media (max-width: 600px) {
+
+  .content-section {
+    margin: 10px;
+  }
+
+  #appLinks button {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #videoGuides iframe {
+    max-width: 100%;
+  }
+}
+/* ============================================================
+   PUBLIC SITE STYLES + RESPONSIVE LAYOUT
+   ============================================================ */
+/* Justify all text but do NOT justify buttons or controls */
+.content-section *:not(button):not(a):not(.app-button) {
+  text-align: justify !important;
+}
+
+button, 
+button *, 
+.app-button, 
+.app-button * {
+  text-align: center !important;
+}
+
+/* Prevent sideways scroll */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Optional wrapper for live site */
+.page-wrapper {
+  max-width: 900px;
+  margin: auto;
+  padding: 15px;
+}
+
+.content-section {
+  margin: 20px;
+}
+
+/* App Buttons */
+#appLinks button {
+  background: #555;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin: 10px;
+  width: 100%;
+  max-width: 260px;
+}
+
+#appLinks button:hover { background: #777; }
+
+/* Video Embeds */
+#videoGuides iframe {
+  display: inline-block;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  aspect-ratio: 16/9;
+  margin: 7px;
+  border-radius: 6px;
+}
+
+/* Responsive images */
+img, .content-section img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px; /* optional */
+}
+
+/* -----------------------------
+   MOBILE BREAKPOINTS
+   ----------------------------- */
+@media (max-width: 600px) {
+
+  .content-section {
+    margin: 10px;
+  }
+
+  #appLinks button {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #videoGuides iframe {
+    max-width: 100%;
+  }
+}
