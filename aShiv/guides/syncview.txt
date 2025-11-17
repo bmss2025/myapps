@@ -1,0 +1,84 @@
+-----------------------------------------
+INSTRUCTIONS FOR RUNNING DEMO IN SYNCVIEW
+-----------------------------------------
+
+----------
+FIRST STEP
+----------
+
+Download (if you havent already) the "demo_syncview.zip" file containing all necessary files to run the demo.
+
+------------------------------
+HOW TO LOAD THE DEMO PROJECT ?
+------------------------------
+
+There is actually just one file that is locally required to be in your disk to run a demo project in SyncView. The other thing you require is the url of the appropriate video uploaded to YouTube or Vimeo.
+
+1. Get the Youtube video id from the "demo_syncview_youtube.txt" file. Copy only the Id and paste it the "Video Id:" textbox.
+   
+   -- If "https://www.youtube.com/watch?v=zbNuGhDPaX0" is the url of the video then "zbNuGhDPaX0" is the video id.
+
+2. Click on the "Load JSON" button.
+
+3. Browse into the "demo_syncview" folder in your local disk and select the "demo_sv_json.json" file.
+
+4. Click "Open", and the file would be loaded in memory. On success, you shall see the file name appearing between the "LoadJSON" and "Load Project" buttons.
+
+5. Click on the "Load Project" button. This will bring both the video (unless it's unavailable at source) and the map in view.
+
+6. Play the video or click on any position on the red track on the map. This will play the video as well as the cursor will start moving.
+
+----------------------------------
+INTERACTION WHILE VIDEO IS PLAYING
+----------------------------------
+
+1. While the video is playing you can do very little interaction through the map, simply because it is constantly moving and panning is restricted. But zooming is allowed. But still user may press in a different place in the red track to instantly make the video move back and forth and start playing from the point marked by the map cursor.
+
+2. Through the video, you may drag the timeline scrub to make the cursor move to the related position in the map, and continue playing from that position.
+
+---------------------------------
+INTERACTION WHILE VIDEO IS PAUSED
+---------------------------------
+
+With the video at pause the restriction on panning is removed, you can freely pan the map anywhere you like to pick your location to place the cursor. That's the only yet important difference.
+
+---------------
+RECORDING VIDEO  
+---------------
+
+There are two buttons on the control marked "R" and "S". "R" is for start recording and "S" is to stop the recording. Recording happens on a predefined canvas (invisible) which includes both the video and the map as displayed on the screen. Side by side.
+
+Recording is executed with the system inherent screen share & recorder and it requires that the user selects the "Entire Screen" option for better quality.
+
+a. Captures more pixels resulting in higher resolution.
+
+b. Less compression without restrictions applied by applications.
+
+c. Maintains a stable frame rate throughout.
+
+--------------------------------
+! IMPORTANT NOTES ON RECORDING :
+--------------------------------
+
+1. Recording actually records the mouse cursor also. So be wary of that and make sure to keep your mouse cursor outside the canvas area.
+
+2. Since recording opens the sharing window and share panel, it is adviseable to pause the video at starting position.
+
+3. Start recording. Select "Entire Screen" option. Hide the "Sharing" panel that appears at the bottom, and then...
+
+4. Play the video. You can always use a video editor to trim off the few seconds at the start that includes your recording setup process.
+
+5. Click on the "S" button when done recording. This will automatically save the video to your downloads folder in a webm format.
+
+6. Then open the hidden "Sharing" panel (a browser window) and press "Stop Sharing", to close it.
+
+7. Check the downloaded WEBM video file.
+
+WEBM is a format that any modern browsers can play and is readily accepted by Youtube too for uploading.
+
+---------------------------------
+END OF SYNCVIEW DEMO INSTRUCTIONS
+---------------------------------
+
+* Refer tutorial videos for more explanations.
+
