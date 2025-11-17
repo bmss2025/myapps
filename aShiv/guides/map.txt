@@ -1,0 +1,152 @@
+------------------------------------
+INSTRUCTIONS FOR RUNNING DEMO IN MAP
+------------------------------------
+
+----------
+FIRST STEP
+----------
+
+Download (if you havent already) the "demo_map.zip" file containing all necessary files to run the demo.
+
+-----------------------------
+HOW TO LOAD A SAVED PROJECT ?
+-----------------------------
+
+1. Click on the "Load Project" button.
+
+2. Browse to your downloads folder. From within the "demo_map" folder, select the project file with an extention ".mapproj"
+
+3. Click "Open"
+
+4. On success, the system will output a message Project "Guwahati-2025-1.mapproj" loaded successfully!", and the map will display the files.
+
+-----------------------------------
+HOW TO LOAD INDIVIDUAL MAP LAYERS ?
+-----------------------------------
+
+1. Click on "Add Geojson/KMZ/KML Layers" button.
+
+2. Browse to "demo_map" folder and select any one of data layer files with a ".geojson" extension.
+
+3. Click "Open"
+
+4. This should effectively load the geojson layer into the map and display it.
+
+5. Repeat the same with the other layer too.
+
+6. This should give you a multi layer display of your map.
+
+-----------------------
+HOW TO SAVE A PROJECT ?
+-----------------------
+
+1. Once you have customized a map to your liking, you may save the layer settings as a project file.
+
+2. To do this, click on "Save Project" with your customized map in view.
+
+3. This would open the "Save As" dialog.
+
+4. Give it a name and select a location to save it as a fresh project or replace an existing project by selecting it.
+
+5. Press "Save".
+
+---------------------------------
+CUSTOMIZE STYLE OF A LOADED LAYER
+---------------------------------
+
+1. Once a layer is loaded, it will be displayed in the left sidebar.
+
+2. Click on the paintbrush icon to open the customizer panel.
+
+3. Use the "Color", "Opacity" and "Line Weight" options to customize how you want the data layer geometry is displayed.
+
+4. Make use of the options under the "Label" section to apply and customize how labels are displayed for each geometry of the layer.
+
+5. From the options under "Advanced" section you can use "Clustering" and "Heatmap" options to manage data with point type geometry.
+
+6. Once done click "Apply & Close"
+
+----------------------
+MANAGE MAP DATA LAYERS
+----------------------
+
+1. You can hide or show a layer in the map by toggling the checkbox beside the layer name in the sidebar.
+
+2. Use the two arrow icons to change the z-index (move layer one above or below another) of map layers.
+
+3. Click on the trash bin icon to remove a layer from the display.
+
+----------------------------------
+EXECUTE SEARCH & FILTER OPERATIONS
+----------------------------------
+
+There are two levels of search that can be executed through the application. The Nomanitim based search can execute with or without a data layer being loaded. It searches for placenames from the nomanitim database over cloud to display a searched location.
+
+1. Type any place name, in full or in part in the search box.
+
+2. Select "Nomanitim" from the dropdown and click "Search"
+
+3. If your text matches partially with any location/s in the Nomanitim database, they will be listed below the search section.
+
+4. Select your choice and the map will zoom into the location with a marker placed on the exact coordinate.
+ 
+The other level of search happens only when one or more data layers are loaded into the map. It looks for partial matches from all loaded layers and lists them for you to make your selection.
+Just select "Loaded Data Layers" from the dropdown before clicking "Search"
+
+5. Click "Clear" button to clear the panel of all the sorted options resulting from search operations.
+
+--------------------
+ROUTING & NAVIGATION
+--------------------
+
+The routing and navigation panel is also placed on the sidebar. You actually do not load any layers to execute routing and navigation. It all happens over cloud. Only the display and calculation happens at client level. It can run with layers on as well.
+
+1. Right click on the map, preferably over a street, lane or highway to add the starting point. It should appear as a green round icon with a "S" in it.
+
+2. Right click again at another part of the map again preferably over a street, lane or highway, to add the destination. It should appear as a red round icon with a "D".
+
+3. Immediately the map draws the shortest route from "S" to "D". If there is an alternative route, it should draw another line between the points, although in a different color.
+
+4. The navigation panel immediately displays the navigation details of the primary route (in blue). Clicking on the alternative route in orange color (if any) will change the navigation details of that route.
+
+5. By default the speed is selected at 40kmph and the ETA (Estimated Time of Arrival) is calculated according to the distance of the selected route. You can drag the speed slider to dynamically recalculate and display the ETA.
+
+6. You can add interim points to redraw fresh routes involving the added points. To do that....
+
+7. Place your mouse cursor above a drawn route.
+
+8. While the cursor changes to a "pointer" style, left click, hold and drag the new "D" marker to another place on the map over a lane, street or highway and release the mouse.
+
+9. A new route including the added point is recalculated and drawn. The navigation details also gets updated with fresh details.
+
+10. Click "Click All Routes" button to clear the panel and map of all routing and navigation details.
+
+-------------
+OTHER OPTIONS
+-------------
+
+1. Changing basemap displays:
+   
+   -- Use the basemap button at the top right corner of the map to change basemap layers.
+
+2. To get current user/device location:
+
+   -- Just click on the "Compass Arrow" button just below the basemap button to pan and zoom into your current location with a blue marker displayed.
+      You have to have your GPS enabled to successfully get to your current location. On success the "Compass Arrow" changes color to orange.
+
+3. Get to fullscreen view of the map:
+
+   -- Click on the next button (3rd from top) to change map display to a full screen display.
+
+4. Extend view to loaded data layer/s:
+
+   -- Sometimes we tend to move and zoom beyond the extend of our loaded data. To quickly shift the map focus only to the extent of the loaded data layer/s, you can click on the 4th button from the top.
+
+----------------------------
+END OF INSTRUCTIONS FOR DEMO
+----------------------------
+
+* Refer tutorial videos for more explanations. 
+
+
+  
