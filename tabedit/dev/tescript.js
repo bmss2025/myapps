@@ -213,19 +213,38 @@ document.addEventListener('input', e => {
 
 document.getElementById('saveBtn').addEventListener('click', async () => {
   const jsonString = JSON.stringify(geojsonData, null, 2);
+
   if ('showSaveFilePicker' in window) {
     try {
       const handle = await window.showSaveFilePicker({
         suggestedName: 'edited.geojson',
-        types: [{ description: 'GeoJSON', accept: { 'application/geo+json': ['.geojson'], 'application/json': ['.json'] } }]
+        types: [{
+          description: 'GeoJSON',
+          accept: {
+            'application/geo+json': ['.geojson'],
+            'application/json': ['.json']
+          }
+        }]
       });
+
       const writable = await handle.createWritable();
       await writable.write(jsonString);
       await writable.close();
       alert('File saved!');
+      return; // success → stop here
+    } catch (err) {
+      // User canceled → do NOT fallback
+      if (err.name === 'AbortError') {
+        console.log('User cancelled save dialog');
+        return;
+      }
+      console.warn(err);
+      // Do NOT fall back here — fallback only if API missing
       return;
-    } catch (err) { console.warn(err); }
+    }
   }
+
+  // Fallback only when showSaveFilePicker is NOT available
   const blob = new Blob([jsonString], { type: 'application/json' });
   const a = document.createElement('a');
   a.href = URL.createObjectURL(blob);
