@@ -183,6 +183,9 @@ function renderTable() {
   html += '</tbody></table>';
   tableContainer.innerHTML = html;
 
+  // build filters for the newly rendered table
+  if (typeof fltr_build === 'function') fltr_build();
+
   enableResizing();
   enableRowSelection();
 }
