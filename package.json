@@ -8,8 +8,8 @@
     "build": "electron-builder --windows"
   },
   "dependencies": {
-  "electron-appbar-window": "2.0.0"
-   }
+    "electron-appbar-window": "2.0.0"
+  },
   "devDependencies": {
     "electron": "^29.0.0",
     "electron-builder": "^24.13.3"
