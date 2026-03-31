@@ -1,15 +1,13 @@
 {
   "name": "geothumbs-toolbar",
   "version": "1.0.0",
-  "description": "A desktop shortcut toolbar that snaps to the screen edge",
+  "description": "A desktop shortcut toolbar",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
     "build": "electron-builder --windows"
   },
-  "dependencies": {
-    "electron-appbar-window": "2.0.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "electron": "^29.0.0",
     "electron-builder": "^24.13.3"
